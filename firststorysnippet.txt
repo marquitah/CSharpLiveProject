@@ -1,0 +1,21 @@
+    <div class="card mt-5">
+        <div class="card-header card-header-bg">
+            <div class="row">
+                <div class="col-sm">
+                    <h3>User List</h3>
+                </div>
+                <div class="col-sm">
+                    <h4>@Html.ActionLink("Create User", "Create", "CreateUserRequest", null, new { @class = "float-right text-dark" })</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            @{Html.RenderAction("_UserList", "Users");}
+        </div>
+        <div class="card-body">
+            @{Html.RenderAction("_SuspendedUsers", "Users");}
+        </div>
+        <div class="card-body">
+            @{ Html.RenderAction("_UnregisteredUsers", "Users");}
+        </div>
+    </div>
