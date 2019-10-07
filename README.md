@@ -30,7 +30,7 @@ On the Users / Index View page, the Admin is able to view All Users List (Active
         <div class="card-body">
             @{ Html.RenderAction("_UnregisteredUsers", "Users");}
         </div>
-    </div>```
+    </div>
     
 # 2) Color palette implementation
 Now that we have our Container Agreement story complete and integrated into the master branch, it's time to use the Color-palette prepared for the entire site. (see the image  "Colorpalette2.png" in Content/images folder) . All the color style used in the entire site should make use of NO other color but these given colors only. These colors are names as root colors at the top of the Site.css page to make them easier to apply.
