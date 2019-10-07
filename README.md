@@ -9,7 +9,7 @@ Below are descriptions of the stories I worked on along with code snippets.
 # 1) Unregistered Users card-style Tweak
 On the Users / Index View page, the Admin is able to view All Users List (Active, Suspended and unregistered) gathered in one. But there seems to be some card style inconsistency with the Unregistered Users list. Make sure the card style looks similar and consistent with the other two (Active, Suspended). 
 
-<div class="card mt-5">
+'''<div class="card mt-5">
         <div class="card-header card-header-bg">
             <div class="row">
                 <div class="col-sm">
@@ -29,7 +29,7 @@ On the Users / Index View page, the Admin is able to view All Users List (Active
         <div class="card-body">
             @{ Html.RenderAction("_UnregisteredUsers", "Users");}
         </div>
-    </div>
+    </div>'''
     
 # 2) Color palette implementation
 Now that we have our Container Agreement story complete and integrated into the master branch, it's time to use the Color-palette prepared for the entire site. (see the image  "Colorpalette2.png" in Content/images folder) . All the color style used in the entire site should make use of NO other color but these given colors only. These colors are names as root colors at the top of the Site.css page to make them easier to apply.
