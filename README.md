@@ -43,8 +43,3 @@ The style for all view pages should also be consistent and similar to each other
 In some cases, you will encounter that your style changes may not be applied to some containers. This could be because the id attribute taking precedence over class declarations. Find a way to fix these issues too. 
 
 -Added required color palette colors to various css styles to stay consistent with design pattern and corrected overriding classes/id's.
-
-# 3) Schedules Dashboard View (incomplete - attempted to finish this story)
-Create a new partial view in the Shared folder called something like "SchedulesPartial" (you can call it what you like). It should have a matching method in the schedule controller. This should essentially look the same as the Schedule index view, and use the same dictionary process. However, this process should automatically filter based on the logged in user. If the user is an admin, it should show all schedules. If a user is a manager, it should show all schedules associated with that users scheduled or managed jobs (see My Jobs for this filtering). If a user is an employee, it should show only the scheduled items for that user.
-
-Note that the way the dictionary is implemented, you'll need to do the filtering of the list before sending it to the function that creates the dictionary.
